@@ -1,0 +1,311 @@
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    /* list-style: none;  */
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    /* background-color: black; */
+    /* color:white; */
+}
+
+:root{
+    --color-danger: hsl(19, 96%, 53%) ;
+    --pera-color:hsl(0, 0%, 53%);
+    --transform:all 400ms ease;
+    --heading: 'Kumbh Sans', sans-serif;
+    --perafont:'Cabin', sans-serif;
+}
+html{
+    /* font-size: 62.5%; */
+    scroll-behavior:smooth;
+    }
+    /* ------------------------fixed style ---------------------------*/
+p{
+    font-family: var(--perafont);
+    color: rgb(51, 51, 51);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+h1,h2,h3,h4,h5{
+    /* font-family: 'Kumbh Sans', sans-serif; */
+    font-family: 'Chakra Petch', sans-serif;
+    /* font-family: 'Lobster', cursive; */
+}
+#first-latter{
+    color: coral;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-shadow: 0 0 1px #5c5c5c;
+
+}
+.scroll{
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow:0px 4px 5px #7c7c7c;
+    color: #000;
+    z-index: 4;
+}
+button{   
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+#top-heading {
+    text-align: center;
+    font-size: 2.2rem;
+    border-bottom: 2px dashed #ffffff;
+    width: 25%;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin: 0 auto;
+    text-shadow:0 0 1px #000000;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0; 
+    right: 0;
+    padding: 0 4rem;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    transition: all 400ms ease;
+}
+
+
+
+.list li{
+    list-style: none;
+}
+.list li a{
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Sofia Sans', sans-serif;
+}
+.list li a:hover{
+    color: var(--color-danger);
+}
+  
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+   background-color:black;
+}
+
+.container .image-sec{
+    height: 100%;
+    width: 75%;
+    background: url('images/ratan-hero.jpg') center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+ 
+
+}
+.pera-sec{
+    color: white;
+    border-radius: 0.4rem;
+    width: 29rem;
+    padding: 1.5rem 0.8rem;
+}
+.pera-sec h1{
+
+    font-size: 3rem;
+    text-shadow: 1px 2px 10px #fdfffd;
+    text-transform: uppercase;
+}
+
+
+.about-pera h2{
+    
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-shadow: 1px 1px #00b4ff;
+    margin-bottom: 1rem;
+}
+.about-pera{
+margin: 1.8rem;
+}
+
+.pera-sec p{
+    font-size: 1.3rem;
+    text-shadow: 1px 0px 4px #222222;
+    margin: 1rem 0;
+    color: #ffff;
+}
+.sec-line{
+ padding-left:3rem;   
+}
+
+.btn{
+    border: none;
+    color: white;
+    transition:all 300ms;
+    /* width: rem; */
+    padding: 0.3rem 1.3rem;
+    background-color: var(--color-danger);
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    height: 2.3rem;
+}
+.btn:hover{
+    color: var(--color-danger);
+    box-shadow: 2px 2px 1rem 4px #fdfdfc;
+    background-color: white;
+    /* border:2px solid var(--color-danger);  */
+}
+
+/*  =================================== */
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    /* overflow: hidden; */
+    height:93vh;
+    margin-bottom: 3rem;
+}
+.image-sec {
+    height: 100%;
+    width: 100%;
+    background: url('images/about-tata.jpg') center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.third-sec{
+    
+    height: 75vh;
+    width: 100%;
+    background: url('images/bacground1.jpg') rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.achievement ul{
+    color: #fff;
+    height: 55vh;
+    text-shadow: 1px 1px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left:4rem ;
+}
+.company-logo img{
+height: 14rem;
+}
+.company-list h2{
+    text-align: center;
+    font-size: 2.5rem;
+    border-bottom: 2px dashed #e828ff;
+    width: 22%;
+    color: rgb(0 162 239);
+    font-weight: 600;
+    margin: 2rem auto;
+    text-shadow: 0 0 2px #e660ff;
+
+}
+.company-logo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.last-sec{
+   width: 100%;
+    background: url('images/background2.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-blend-mode: darken;   
+}
+.net-worth h2{
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    /* width: 20rem; */
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 3px black;
+}
+
+.net-worth p{
+    text-shadow: 1px 1px 3px black;
+
+    width: 65%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #fffefe;
+}
+#fotter{
+text-align:center;
+padding: 0.5rem 0;
+}
+
+@media only screen and (max-width:1070px) {
+    .container .image-sec {
+       width: 100%;
+    }
+    
+}
+@media only screen and (max-width:890px) {
+     .container .image-sec {
+       display: none;
+    }
+    #top-heading{
+        width: 40%;
+    }
+    .company-list h2{
+        width: 40%;
+    }
+    .company-logo img {
+        height: 12rem;
+    }
+    .container{
+        grid-template-columns:none;
+        width: 100%;
+        background: url('images/ratan-hero.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+    }
+}
+@media only screen and (max-width:550px) {
+
+        .pera-sec{
+            width: 21rem;
+        }
+    section{
+        height: auto;
+        grid-template-columns: none;
+        grid-template-rows: 0.1fr 1.5fr;
+    }    
+    .achievement ul {
+        height: 80vh;
+        margin-left: 2rem;
+    }
+    .third-sec{
+        height: auto;
+    }
+    .net-worth p {
+        width: auto;
+      margin: 0 0.5rem;
+        font-size: 1.1rem;
+    }
+    #top-heading {
+        width: 70%;
+    }
+}
